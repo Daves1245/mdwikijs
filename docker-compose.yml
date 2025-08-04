@@ -1,0 +1,13 @@
+
+services:
+  mdwiki:
+    build: .
+    ports:
+      - "3030:3000"
+    volumes:
+        # mount wiki contents here
+        - ./wiki:/wiki:ro
+    environment:
+      - NODE_ENV=production
+      - WIKI_ROOT_PATH=/wiki
+    restart: unless-stopped

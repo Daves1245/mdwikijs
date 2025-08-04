@@ -39,3 +39,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# vim
+*.swp
+*.swo
+*.swn
+
+# wiki files
+wiki/
