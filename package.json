@@ -5,9 +5,15 @@
   "scripts": {
     "dev": "next dev --turbopack",
     "dev:local": "WIKI_ROOT_PATH=./wiki next dev --turbopack",
+    "dev:node": "npm run dev",
+    "dev:node:local": "WIKI_ROOT_PATH=./wiki npm run dev",
     "build": "next build",
+    "build:node": "npm run build",
     "start": "next start",
+    "start:node": "npm start",
     "lint": "next lint",
+    "install:node": "npm install",
+    "install:bun": "bun install",
     "docker:build": "docker build -t mdwikijs .",
     "docker:run": "docker-compose up -d",
     "docker:stop": "docker-compose down"
